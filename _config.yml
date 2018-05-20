@@ -1,0 +1,16 @@
+#
+# Config file for Jekyll
+#
+
+# Change timezone to London
+timezone: Europe/London
+
+# Remove dates from permalinks
+permalink: title
+
+# Keep README.md out of the built site
+exclude: [README.md]
+
+# Add the redirect plugin for 301 redirects
+plugins:
+  - jekyll-redirect-from
