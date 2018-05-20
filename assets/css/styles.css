@@ -1,0 +1,20 @@
+/*
+  Styles for Newton Bell holding site
+*/
+
+/*
+  Non-Critical
+*/
+
+/* Media queries */
+
+@media only screen and (min-width: 800px) {
+
+	.contact span {
+		display: inline-block;
+	}
+	.content span:nth-of-type(even) {
+		margin-left: 2rem;
+	}
+
+}

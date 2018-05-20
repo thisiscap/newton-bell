@@ -1,0 +1,135 @@
+/*
+  Styles for Newton Bell holding site
+*/
+
+/*
+  Critical (above the fold)
+*/
+
+/* Webfont */
+
+@font-face {
+  font-family: 'roboto-thin-webfont';
+  src: url('/assets/fonts/roboto-thin-webfont.eot'); /* IE9 Compat Modes */
+  src: url('/assets/fonts/roboto-thin-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/assets/fonts/roboto-thin-webfont.woff') format('woff'), /* Modern Browsers */
+       url('/assets/fonts/roboto-thin-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('/assets/fonts/roboto-thin-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+  font-display: swap;
+}
+
+/* Structure */
+
+html * {
+  box-sizing: border-box;
+}
+
+/* Design */
+
+body {
+  margin: 0;
+  padding: 1.5rem;
+
+  font-family: 'roboto-thin-webfont', sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 300;
+  text-rendering: optimizeLegibility;
+
+  color: #76D6FF;
+  background-color: black;
+}
+
+/* Fade in animation */
+
+@-webkit-keyframes fadeIn {
+  0%   { opacity: 0; }
+  100% { opacity: 1;
+         visibility: visible; }
+}
+
+@-moz-keyframes fadeIn {
+  0%   { opacity: 0; }
+  100% { opacity: 1;
+         visibility: visible; }
+}
+
+@-o-keyframes fadeIn {
+  0%   { opacity: 0; }
+  100% { opacity: 1;
+         visibility: visible; }
+}
+
+@keyframes fadeIn {
+  0%   { opacity: 0; }
+  100% { opacity: 1;
+         visibility: visible; }
+}
+
+.fade-in {
+  -webkit-animation: fadeIn 1.5s ease-out .2s forwards;
+  -moz-animation: fadeIn 1.5s ease-out .2s forwards;
+  -o-animation: fadeIn 1.5s ease-out .2s forwards;
+  animation: fadeIn 1.5s ease-out .2s forwards;
+  visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+  body {
+    -webkit-font-smoothing: subpixel-antialiased;
+  }
+}
+
+/* Typography */
+
+h1, h2 {
+  font-size: 2.6em; /* Fallback */
+  font-size: calc( 31px + (50 - 31) * ( ( 100vw - 320px ) / (1280 - 320) ));
+  line-height: 1.1;
+  text-transform: uppercase;
+  max-width: 1280px;
+}
+
+h1, h2, p {
+  margin: 1.8rem 0 2.4rem;
+}
+
+p {
+	font-size: 1.5em;
+}
+
+/* Globals */
+
+#newton-bell-logo {
+  width: 100%;
+  max-width: 305px;
+  margin-bottom: 3rem;
+}
+
+/* Links */
+
+main a:link {
+  color: white;
+  text-decoration: none;
+  transition: color 1.5s ease;
+}
+
+main a:visited {
+  color: white;
+}
+
+main a:hover {
+  color: #fdd478;
+}
+
+main a:active {
+  color: #fdd478;
+}
+
+/* Components */
+
+.contact span {
+  display: block;
+}
