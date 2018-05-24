@@ -96,40 +96,10 @@ h1, h2, p {
   margin: 1.8rem 0 2.4rem;
 }
 
-p {
-	font-size: 1.5em;
-}
-
 /* Globals */
 
 #newton-bell-logo {
   width: 100%;
   max-width: 305px;
   margin-bottom: 3rem;
-}
-
-/* Links */
-
-main a:link {
-  color: white;
-  text-decoration: none;
-  transition: color 1.5s ease;
-}
-
-main a:visited {
-  color: white;
-}
-
-main a:hover {
-  color: #fdd478;
-}
-
-main a:active {
-  color: #fdd478;
-}
-
-/* Components */
-
-.contact span {
-  display: block;
 }
