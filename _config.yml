@@ -9,7 +9,10 @@ timezone: Europe/London
 permalink: title
 
 # Keep README.md out of the built site
-exclude: [README.md]
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
 
 # Add the redirect plugin for 301 redirects
 plugins:

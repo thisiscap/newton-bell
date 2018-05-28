@@ -21,7 +21,8 @@
 /* Structure */
 
 html * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 /* Design */
@@ -49,18 +50,6 @@ body {
          visibility: visible; }
 }
 
-@-moz-keyframes fadeIn {
-  0%   { opacity: 0; }
-  100% { opacity: 1;
-         visibility: visible; }
-}
-
-@-o-keyframes fadeIn {
-  0%   { opacity: 0; }
-  100% { opacity: 1;
-         visibility: visible; }
-}
-
 @keyframes fadeIn {
   0%   { opacity: 0; }
   100% { opacity: 1;
@@ -69,8 +58,6 @@ body {
 
 .fade-in {
   -webkit-animation: fadeIn 1.5s ease-out .2s forwards;
-  -moz-animation: fadeIn 1.5s ease-out .2s forwards;
-  -o-animation: fadeIn 1.5s ease-out .2s forwards;
   animation: fadeIn 1.5s ease-out .2s forwards;
   visibility: hidden;
   -webkit-backface-visibility: hidden;
@@ -85,19 +72,13 @@ body {
 /* Typography */
 
 h1, h2 {
-  font-size: 2.6em; /* Fallback */
-  font-size: calc( 31px + (50 - 31) * ( ( 100vw - 320px ) / (1280 - 320) ));
+  font-size: calc( 22px + (50 - 22) * ( ( 100vw - 320px ) / (1280 - 320) ));
   line-height: 1.1;
-  text-transform: uppercase;
   max-width: 1280px;
 }
 
 h1, h2, p {
   margin: 1.8rem 0 2.4rem;
-}
-
-p {
-	font-size: 1.5em;
 }
 
 /* Globals */
@@ -106,30 +87,4 @@ p {
   width: 100%;
   max-width: 305px;
   margin-bottom: 3rem;
-}
-
-/* Links */
-
-main a:link {
-  color: white;
-  text-decoration: none;
-  transition: color 1.5s ease;
-}
-
-main a:visited {
-  color: white;
-}
-
-main a:hover {
-  color: #fdd478;
-}
-
-main a:active {
-  color: #fdd478;
-}
-
-/* Components */
-
-.contact span {
-  display: block;
 }
